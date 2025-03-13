@@ -1,0 +1,554 @@
+* {
+  padding: 0px;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  position: relative;
+}
+
+/* navigation menu  */
+
+.head-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.head-main {
+  height: 90px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
+  background-color: white;
+}
+
+.head-menu {
+  display: flex;
+  font-weight: 600;
+  gap: 30px;
+}
+
+.menu {
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* It is option method start*/
+
+.option-main {
+  position: relative;
+  display: inline-block;
+}
+
+.option-main:hover .option {
+  display: block;
+}
+
+.option {
+  display: none;
+  position: absolute;
+  left: 50px;
+  border: 3px solid red;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 37px;
+  gap: 20px;
+  padding-right: 10px;
+
+  /* margin: 10px; */
+  transform: translateX(-50%);
+  /* margin-top: 10px; */
+  background-color: rgb(212, 201, 201);
+}
+
+.option-head {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.option-head:hover {
+  color: red;
+}
+
+.option ul {
+  list-style-type: none;
+}
+
+.option a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.option a:hover {
+  color: red;
+}
+
+/* It is option Method End */
+
+.head-icon {
+  display: flex;
+  gap: 30px;
+}
+a.one {
+  color: black;
+  text-decoration: none;
+}
+
+a.one:hover {
+  color: red;
+  text-decoration: none;
+}
+
+
+/* It is finish of navigation method  */
+
+/* It is main-container watch section  */
+
+
+
+.center-main {
+  background-color: #f0f0f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 147px;
+}
+
+.center-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  color: #0b1c39;
+  gap: 50px;
+}
+
+.center-para {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #212025;
+}
+
+.center-shop-link {
+  display: flex;
+  background-color: #4a4a4b;
+  padding: 22px;
+  padding-left: 27px;
+  width: 94px;
+  height: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  
+}
+a.center-shop-link:visited {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+}
+
+/* It is finished of main container watch sectin  */
+
+/* It is Card Part-1 Section  */
+
+.card-arrival {
+  margin-top: 180px;
+  margin-left: 320px;
+  font-size: 48px;
+}
+
+.card-1-1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* font-size: 22px; */
+  text-decoration:none;
+}
+
+.card-img-1-1:hover,
+.card-img-1-2:hover,
+.card-img-1-3:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-part1,
+.card-part2,
+.card-part3 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.card-price-1,
+.card-price-2,
+.card-price-3 {
+  text-align: center;
+  color: #ff2020;
+  font-size: 18px;
+}
+
+.card-text-1,
+.card-text-2,
+.card-text-3 {
+  text-align: center;
+  color: #444444;
+  font-size: 24px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a.card-text-1:visited,
+a.card-text-2:visited,
+a.card-text-3:visited {
+  color: #444444;
+}
+
+
+/* It is Finished of Card-1 Part-1  */
+
+/* It is Grid Method  */
+
+.multi-pic-main {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.multi-pic-1:hover,
+.multi-pic-2:hover,
+.multi-pic-3:hover,
+.multi-pic-4:hover{
+transform: scale(1.03);
+  transition: transform 0.4s ease-in-out;
+}
+.multi-pic-1 {
+  grid-area: 1 / 1 / span 2; /* 1st Row la 1st column */
+}
+
+.multi-pic-2 {
+  grid-area: 1 / 2 / span 2; /* 1st row la 2nd column */
+}
+
+/* It is Finished Grid Method  */
+
+/* It is Card Part-2  */
+.multi-watch-head {
+  margin-top: 230px;
+  font-size: 49px;
+
+}
+
+.multi-watch-para {
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 16px;
+      font-family: "Roboto", sans-serif;
+  color: #777;
+}
+
+.multi-watch-1 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 350px;
+  gap: 50px;
+  font-size: 22px;
+  margin-top: 80px;
+}
+
+.multi-watch-2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 350px;
+  gap: 30px;
+  font-size: 22px;
+}
+
+.multi-1,
+.multi-2,
+.multi-3,
+.multi-4,
+.multi-5,
+.multi-6{
+display: flex;
+flex-direction: column;
+gap: 20px;
+text-align: center;
+color: #444444;
+font-size: 23px;
+margin-bottom: 120px;
+}
+
+.multi-watch-text-1,
+.multi-watch-text-2,
+.multi-watch-text-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444444;
+  font-weight: bolder;
+  text-decoration: none;
+} 
+
+.multi-watch-price-1,.multi-watch-price-2,.multi-watch-price-3{
+  font-size: 18px;
+}
+
+.multi-link-view {
+  text-align: center;
+  text-decoration: none;
+  width: 11%;
+  padding: 24px;
+  margin-left: 44%;
+  background-color: RED;
+
+}
+
+.multi-link-view a {
+  text-decoration: none; 
+  color: white; 
+}
+
+
+
+/* It is Finished of Card Part-2  */
+
+/* It is Video method  */
+
+.video-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  height: 800px;
+  background: url('./src/watch-bootsrap.jpg') no-repeat center center;
+  background-size: cover;
+           
+        }
+
+        .play-button {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            border: 2px solid white;
+        }
+
+        .play-button i {
+            color: white;
+            font-size: 30px;
+        }
+
+        .play-button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+/* It is finished of Video Method  */
+
+/* It is Card Part-3  (Choice method)  */
+.choice-watch-1 {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.choice-combine{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.choice-head {
+  font-size: 57px;
+}
+
+.choice-para {
+  color: #777;
+  line-height: 27px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-family:"Roboto", sans-serif; ;
+}
+
+.choice-link-show {
+  background-color: rgb(255, 0, 0);
+  padding: 22px;
+  font-size: 16px;
+  width: 134px;
+  text-decoration: none;
+}
+
+.choice-watch-2 {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  margin-right: 43px;
+}
+/* It is Finished Of Card Part-3 (Choice Method) */
+
+/* It is Red Box Of ending  */
+.red-box-main {
+  margin-top: 150px;
+  display: flex;
+   align-items: center;
+  justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 0, 0);
+  padding-top: 40px;
+  width: 59%; 
+  margin-left: 351px;
+  color: white;
+  padding-bottom: 40px;
+
+}
+
+
+ .red-inline-1,.red-inline-2,.red-inline-3{
+display: flex;
+flex-direction: column;
+gap: 20px;
+ }
+ 
+ 
+.red-head-main{
+
+  font-size: 20px;
+ }
+
+
+.red-1,
+.red-2,
+.red-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  
+}
+
+.red-para {
+      font-size: 16px;
+    color: #d3d1d1;
+  line-height: 25px;
+}
+
+/* It is Finished Red Box Of Ending  */
+
+/* It is Foot Section  */
+.foot-main {
+  display: flex;
+  margin-top: 180px;
+  justify-content: flex-start;
+  align-content: space-between;
+  gap: 100px;
+  margin-left: 379px;
+  line-height: 40px;
+
+}
+
+
+.time-foot{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.foot-para-1 {
+  color: #868c98;
+  line-height: 27px;
+  font-size: 17px;
+}
+
+.two a{
+font-family: "Roboto", sans-serif;
+}
+
+
+a.two:visited {
+  color: #868c98;
+}
+a.two:hover {
+  color: #f91212;
+}
+
+.foot-2{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.foot-3{
+display: flex;
+  flex-direction: column;
+}
+
+.foot-4{
+display: flex;
+  flex-direction: column;
+}
+
+.foot-1 a,.foot-2 a,.foot-3 a,.foot-4 a{
+  text-decoration: none;
+  
+}
+
+.foot-para-1{
+    font-family: "Roboto", sans-serif;
+}
+
+/* It is Finished Of Foot Section  */
+
+/* It is Final Part  */
+.final-edit {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 180px;
+}
+
+.final-para {
+  display: flex;
+  color: #868c98;
+  font-family: "Roboto", sans-serif;
+}
+
+a.last:visited {
+  color: #222222;
+}
+a.last:hover {
+  color: #ff0808;
+}
+a.three:visited{
+  color: red;
+}
+
+.three {
+  text-decoration: none !important;
+}
+
+.final-icon {
+  display: flex;
+  gap: 25px;
+}
+/* It is Finished Of Final Part  */
