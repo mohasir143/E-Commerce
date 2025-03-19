@@ -319,10 +319,10 @@ a.card-text-3:visited {
 
 .multi-allow-cart-1{
     position: absolute;
-    bottom: 0px;
+    bottom: -68px;
     height: 72px;
-    width: 398px;
-    background: red;
+    width: 397px;
+    background-color: red;
 }
 
 .multi-allow-heart-1{
@@ -334,23 +334,40 @@ a.card-text-3:visited {
 }
 
 .multi-allow:hover {
-  .multi-allow-cart-1 {
-    bottom: 0;
+  .multi-allow-cart-1{
+  bottom: 0px;
+    
   }
   .multi-allow-heart-1 {
     display: block;
   }
 }
 
+.cart-multi-para{
+  display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 25px;
+}
 
 
+a.heart-wish:visited{
+color: #4a4a4b;
+
+}
+
+.cart-multi-para{
+  color: white;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
 /* It is Finished of Card Part-2  */
 
 /* It is Video method  */
 
 .video-main {
   position: relative;
-  z-index: -1;
+  /* z-index: -1;  */
 }
 .video-section::before {
   content: "";
