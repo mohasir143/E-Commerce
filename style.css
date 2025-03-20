@@ -3,20 +3,22 @@
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
 }
-body {
-  position: relative;
-}
 
-/* navigation menu  */
 
+
+
+
+/* Navigation menu */
 .head-nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background: white; 
+  z-index: 1000; /* Ensure it stays on top */
 }
+
 .head-main {
   height: 90px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -51,27 +53,38 @@ body {
 .option {
   display: none;
   position: absolute;
-  left: 50px;
-  border: 3px solid red;
-  border-radius: 20px;
-  padding: 20px;
+  left: -10px;
+  width: 145px;
+  height: 80px;
+  border-top-right-radius:7px;
+  overflow: hidden;
+  border-top-left-radius: 7px;
+  padding: 10px;
   line-height: 37px;
-  gap: 20px;
-  padding-right: 10px;
-
-  /* margin: 10px; */
-  transform: translateX(-50%);
-  /* margin-top: 10px; */
-  background-color: rgb(212, 201, 201);
+  background-color: rgb(249, 242, 242);
+  top: 25px;
 }
 
+
+
+.inline-color{
+  position: absolute;
+  border: red 2px solid;
+  width:160px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  left:0px;
+  top: 0px;
+  
+}
 .option-head {
-  cursor: pointer;
+  cursor: pointer;   
   font-size: 17px;
 }
 
 .option-head:hover {
   color: red;
+  
 }
 
 .option ul {
@@ -81,11 +94,23 @@ body {
 .option a {
   text-decoration: none;
   font-size: 15px;
+  
 }
 
+.option{
+ 
+justify-items: center;
+}
+
+.triangle{
+  position:absolute;
+  display: block;
+}
 .option a:hover {
   color: red;
 }
+
+
 
 /* It is option Method End */
 
@@ -223,6 +248,27 @@ a.card-text-3:visited {
   transform: scale(1.03);
   transition: transform 0.4s ease-in-out;
 }
+
+
+.multi-pic-1{
+  height:689px ;
+   width:846px;
+}
+
+
+.multi-pic-2{
+  height: 689px; 
+  width: 500px;
+}
+.multi-pic-3{
+  height: 347px; 
+  width: 513px;
+}
+.multi-pic-4{
+  height: 321px; 
+  width: 513px;
+}
+
 .multi-pic-1 {
   grid-area: 1 / 1 / span 2; /* 1st Row la 1st column */
 }
@@ -616,3 +662,162 @@ a.three:visited {
   gap: 25px;
 }
 /* It is Finished Of Final Part  */
+
+
+/* It is Media Query used it  */
+
+
+@media screen and (max-width:1300px) {
+  .center-main{
+  display: flex;
+  flex-direction: column;
+ }
+  .center-title{
+    margin-top: 70px;
+  }
+
+  .card-arrival{
+    margin-left: 550px;
+    margin-bottom: 100px;
+  }
+
+  .card-part1,
+  .card-part2,
+  .card-part3{
+     align-items: center;
+}
+
+  .card-part1,
+  .card-part2{
+    margin-right: 200px;
+  }
+
+  .card-part3{
+  
+  margin-left: 500px;
+}
+   .card-1-1 {
+    display: grid;
+    margin-left: 80px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+  }
+
+
+    .multi-pic-main{
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 55px;
+        gap: 50px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .multi-pic-1{
+      width: 600px;
+      height: 500px;
+    }
+    .multi-pic-2{
+      width: 550px;
+      height: 500px;
+    }
+
+    .multi-pic-3{
+      width: 600px;
+      height: 450px;
+    }
+    .multi-pic-4{
+       width: 550px;
+      height: 450px;
+    }
+
+
+    .multi-watch-1,.multi-watch-2{
+      margin-left: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+    }
+     .multi-3{
+      margin-left: 700px;
+     
+     }
+
+    .multi-2{
+      margin-right: 400px;
+    }
+    
+    .multi-6{
+      margin-left: 700px;
+    }
+    
+    .multi-5{
+      margin-right: 400px;
+    }
+    .video-main{
+      width:70%;
+      margin-left: 250px;
+      
+    }
+    .video-page-link{
+      background-color: red;
+      width: 500px; 
+    }
+   
+   .red-box-main{
+      background-color: red;
+      width: 90%;
+      margin-left: 100px;
+    }
+    .foot-main{
+  margin-left: 100px;
+  }
+}
+
+
+
+.hot-badge {
+    position: absolute;
+    cursor: pointer;
+    top: -22px;
+    left: 73%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px;
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 768px) {
+  .card-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+} */
